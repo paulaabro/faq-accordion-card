@@ -12,6 +12,7 @@ main {
   box-shadow: 0 50px 50px -20px rgba(53, 18, 122, 0.497159);
   border-radius: 23px;
   margin: 148px auto 85px;
+  padding-bottom: 48px;
 }
 
 img {
@@ -30,7 +31,6 @@ h1 {
 
 .container {
   margin: 12px auto 0;
-  padding-bottom: 48px;
 }
 
 details {
@@ -77,4 +77,50 @@ p {
   line-height: 18px;
   color: #787887;
   margin-bottom: 16px;
+}
+
+@media (min-width: 920px) {
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    width: 920px;
+    height: 509px;
+    background-color: #fff;
+    margin: 0;
+
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+  }
+
+  img {
+    display: block;
+    width: 600px;
+    max-width: unset;
+    margin: 100px 0 -210px -255px;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  .container {
+    width: 450px;
+    margin: 0;
+  }
+
+  details {
+    margin: 0;
+  }
+
+  summary h2 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
 }
