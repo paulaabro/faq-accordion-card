@@ -50,18 +50,21 @@ summary {
 summary h2 {
   font-size: 13px;
   line-height: 16px;
+  transition: all 500ms;
   color: #4b4c5f;
 }
 
 summary ion-icon {
   font-size: 16px;
   color: #f47b56;
+  transition: all 500ms;
 }
 
 details[open] summary {
   margin-top: 5px;
   height: 40px;
 }
+
 details[open] h2 {
   font-weight: 700;
   color: #1E1F36;
@@ -118,6 +121,10 @@ p {
     margin: 0;
   }
 
+  details:not([open]) summary:hover h2 {
+    cursor: pointer;
+    color: #F47B56;
+  }
   summary h2 {
     font-size: 14px;
     line-height: 17px;
